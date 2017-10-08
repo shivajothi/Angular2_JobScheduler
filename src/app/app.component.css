@@ -1,0 +1,40 @@
+
+
+.home {
+   
+    margin: 0 auto;
+    width :100%;
+    max-width: 1060px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 2.5rem 1rem;
+
+}
+
+.banner {
+   border: 1px solid;
+   margin: 1rem;
+   padding: 0.5rem;
+   background: #0f67ce;
+   color: #fff;
+}
+
+#timeline {
+    width: 45.25rem;
+    height: 5rem;
+}
+
+#timeline .btn-large {
+    display: none;
+} 
+
+.show {
+    display: block;
+}
+
+.hide {
+    display: none;
+}

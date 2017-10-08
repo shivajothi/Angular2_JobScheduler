@@ -1,0 +1,15 @@
+<div id="keyFrames" *ngIf="jobs">
+  <span *ngFor="let job of jobs; let current = index; let last=last;" [ngStyle]="{'left':getSchedule(current,last,job.hours,'left',jobs),'width':getSchedule(current,last,job.hours,'width',jobs),'background':getLegends(job.id)}"
+    class="job-schedule" (click)="selectJob(job);editJob.toggleClass()">
+        Job {{job.id}} 
+    </span>
+</div>
+<div id="keys">
+  <span *ngFor="let hour of keys;let i=index;" class="hour">{{hour}}</span>
+</div>
+<div id="editJobs">
+  <app-jobs [editMode]=true [selectedJob]="selectedJob" [jobTitle]="jobTitle" [className]="showJobs" #editJob></app-jobs>
+</div>
+<div id="legends">
+  <legend></legend>
+</div>

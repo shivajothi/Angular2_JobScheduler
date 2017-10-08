@@ -1,0 +1,46 @@
+.input-group {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 50%;
+}
+
+.input-group label {
+  display: block;
+}
+
+.title-small {
+  width: 100%;
+  border: 1px solid;
+  text-align: center;
+  background: #FFC107;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+.job-inputs {
+  display: flex;
+  margin: 2rem 0;
+  justify-content: space-between;
+}
+
+.show-jobs {
+  width: 15rem;
+}
+
+.list {
+  width: 50%;
+}
+
+.list option {
+  font-size: 1.25rem;
+}
+
+.inputs {
+  height: 4rem;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1rem;
+}
+
+.hours {}

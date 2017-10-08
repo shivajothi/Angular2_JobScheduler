@@ -1,0 +1,28 @@
+<div class="show-jobs">
+  <!-- <button class="choose-job"  (click)="toggleClass()" class="btn btn-large"  >{{jobTitle}}</button>!-->
+  <div class="job-options" [className]="showJobs">
+    <div class="job-inputs">
+      <select class="list" size="5" (change)="selectJob($event)" #jobs>
+            <option *ngFor="let job of jobLists" value="{{job.id}}" [selected]="job.id==selectedJob.id?true:null">
+                {{job.label}}
+            </option>
+        </select>
+      <div class="input-group">
+        <div class="title-small">Start Time</div>
+        <div class="hours">
+          <label>Hours</label>
+          <input type="number" min="0" max="24" step="1" class="job-hours" placeholder="hours" value="{{selectedJob.hours}}" #hours
+            class="inputs hours">
+        </div>
+        <div class="minutes">
+          <label>Minutes</label>
+          <input type="number" min="0" max="60" step="1" class="job-minutes" placeholder="minutes" value="{{selectedJob.minutes}}"
+            #minutes class="inputs minutes">
+        </div>
+      </div>
+    </div>
+    <div class="actions">
+      <button class="cancel-job" (click)="toggleClass()" class="btn btn--red">Cancel</button>
+      <button class="add-job" (click)="addJob(jobs.value,hours.value,minutes.value); hours.value='0';minutes.value='0'; " class="btn">Done</button>
+    </div>
+ </div>
