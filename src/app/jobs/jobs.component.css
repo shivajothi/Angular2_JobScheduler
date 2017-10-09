@@ -13,7 +13,7 @@
   width: 100%;
   border: 1px solid;
   text-align: center;
-  background: #FFC107;
+  background: #0f67ce;
   color: #fff;
   font-size: 1.5rem;
 }
@@ -30,10 +30,12 @@
 
 .list {
   width: 50%;
+  overflow-y: auto;
 }
 
 .list option {
   font-size: 1.25rem;
+  padding: 0.25rem;
 }
 
 .inputs {
@@ -43,4 +45,4 @@
   font-size: 1rem;
 }
 
-.hours {}
+

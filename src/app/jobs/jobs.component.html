@@ -1,4 +1,5 @@
 <div class="show-jobs">
+  <h2 [className]="showJobs" *ngIf="editMode">Edit Job  <span *ngIf="selectedJob" >:{{selectedJob.id}}</span></h2>
   <!-- <button class="choose-job"  (click)="toggleClass()" class="btn btn-large"  >{{jobTitle}}</button>!-->
   <div class="job-options" [className]="showJobs">
     <div class="job-inputs">

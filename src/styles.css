@@ -11,7 +11,7 @@ body {
 }
 
 .btn {
-  background: #3498db;
+  background: #0f67ce;
   font-family: Arial;
   color: #ffffff;
   font-size: 1rem;
@@ -19,10 +19,11 @@ body {
   padding: 0.875rem 1.25rem;
   text-decoration: none;
   border: none;
-}
+  }
 
 .btn:hover {
-  background: #3cb0fd;
+  background: #345d8e;
+  cursor: pointer;
   text-decoration: none;
 }
 

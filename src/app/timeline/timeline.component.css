@@ -16,6 +16,11 @@
     font-weight: bold;
     text-align: center;
     color: #fff;
+    cursor: pointer;
+}
+
+.job-schedule:hover {
+    border: 2px solid;
 }
 
 #editJobs {

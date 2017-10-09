@@ -8,6 +8,7 @@
   <span *ngFor="let hour of keys;let i=index;" class="hour">{{hour}}</span>
 </div>
 <div id="editJobs">
+  
   <app-jobs [editMode]=true [selectedJob]="selectedJob" [jobTitle]="jobTitle" [className]="showJobs" #editJob></app-jobs>
 </div>
 <div id="legends">
